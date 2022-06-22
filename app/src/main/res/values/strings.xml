@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">kazan-manager-ktl</string>
+    <string name="tv_welcome_text">Добро пожаловать</string>
+    <string name="tv_welcome_description_text">Войдите в аккаунт</string>
+    <string name="et_login_hint">ИМЯ</string>
+    <string name="et_password_hint">ПАРОЛЬ</string>
+    <string name="cb_remember_text">Запомнить</string>
+    <string name="btn_login_text">Войти</string>
 </resources>

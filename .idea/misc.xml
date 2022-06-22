@@ -3,7 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/layout/activity_main.xml" value="0.31929347826086957" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/drawable-v24/ic_arrow_light.xml" value="0.1935" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2285" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/drawable-v24/text_field_login_background_light.xml" value="0.1935" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/drawable/ic_arrow.xml" value="0.2285" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2285" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/drawable/ic_settings.xml" value="0.2285" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/drawable/login_background.xml" value="0.2285" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/drawable/text_field_login_background.xml" value="0.2285" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/layout-land/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/layout-sw720dp-land/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/layout-w320dp/activity_main.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Alex/AndroidStudioProjects/kazanmanagerktl/app/src/main/res/layout/activity_splash.xml" value="0.31929347826086957" />
       </map>
     </option>
   </component>
