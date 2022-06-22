@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Kazanmanagerktl" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Kazanmanagerktl" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -12,5 +12,42 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="loginBackground">
+        <item name="android:background">@drawable/login_background</item>
+    </style>
+
+    <style name="imvLogo">
+        <item name="android:src">@drawable/dark_circle</item>
+    </style>
+
+    <style name="tvWelcomeText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/dark_welcome</item>
+    </style>
+
+    <style name="tvWelcomeDescriptionText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/dark_description</item>
+    </style>
+
+    <style name="etlLoginActivity" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/dark_etl_hint</item>
+        <item name="hintTextColor">@color/dark_hint_etl</item>
+    </style>
+
+    <style name="etLoginActivity" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:background">@drawable/text_field_login_background_dark</item>
+        <item name="android:textColor">@color/dark_text_color_et</item>
+    </style>
+
+    <style name="cbRemember">
+        <item name="android:textColor">@color/cb_remember_textColor_dark</item>
+        <item name="android:buttonTint">@color/cb_remember_buttonTint_dark</item>
+    </style>
+
+    <style name="btnLogin">
+        <item name="android:textColor">@color/btn_login_textColor_dark</item>
+        <item name="android:backgroundTint">@color/btn_login_backgroundTint_dark</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow_dark</item>
     </style>
 </resources>

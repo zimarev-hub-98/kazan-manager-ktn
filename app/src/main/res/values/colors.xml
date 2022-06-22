@@ -7,4 +7,33 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="light_welcome">#1A4866</color>
+    <color name="dark_welcome">#FFF</color>
+
+    <color name="dark_description">#68BEF6</color>
+    <color name="light_description">#C7D2D8</color>
+
+    <color name="light_etl_hint">#9DAEBB</color>
+    <color name="dark_etl_hint">#678194</color>
+
+    <color name="light_hint_etl">#678194</color>
+    <color name="dark_hint_etl">#68BEF6</color>
+
+    <color name="light_text_color_et">#0E3350</color>
+    <color name="dark_text_color_et">#FFF</color>
+
+
+    <color name="cb_remember_textColor_light">#1C4A67</color>
+    <color name="cb_remember_textColor_dark">#FFF</color>
+
+    <color name="cb_remember_buttonTint_light">#1C4A67</color>
+    <color name="cb_remember_buttonTint_dark">#FFF</color>
+
+
+    <color name="btn_login_textColor_light">#FFF</color>
+    <color name="btn_login_textColor_dark">#103452</color>
+
+    <color name="btn_login_backgroundTint_light">#18496B</color>
+    <color name="btn_login_backgroundTint_dark">#FFF</color>
 </resources>
