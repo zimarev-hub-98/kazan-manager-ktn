@@ -2,16 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    style="@style/loginBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/loginBackground"
     tools:context=".LoginActivity">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imv_logo_login"
+        style="@style/imvLogo"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        style="@style/imvLogo"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="@+id/glv_left"
@@ -20,9 +21,9 @@
 
     <TextView
         android:id="@+id/tv_welcome"
+        style="@style/tvWelcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/tvWelcomeText"
         android:text="@string/tv_welcome_text"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -34,7 +35,6 @@
         style="@style/tvWelcomeDescriptionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="@string/tv_welcome_description_text"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/glv_left"
@@ -42,49 +42,58 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_login"
+        style="@style/etlLoginActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/etlLoginActivity"
 
+        app:counterMaxLength="2"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toStartOf="@+id/glv_right"
         app:layout_constraintStart_toStartOf="@+id/glv_left"
         app:layout_constraintTop_toTopOf="@+id/glh_login">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_login"
+            style="@style/etLoginActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            style="@style/etLoginActivity"
             android:layout_marginBottom="13dp"
-            android:hint="@string/et_login_hint"/>
+            android:hint="@string/et_login_hint"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_password"
+        style="@style/etlLoginActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/etlLoginActivity"
 
+        app:endIconMode="password_toggle"
         app:layout_constraintEnd_toStartOf="@+id/glv_right"
         app:layout_constraintStart_toStartOf="@+id/glv_left"
         app:layout_constraintTop_toBottomOf="@+id/etl_login">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
+            style="@style/etLoginActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            style="@style/etLoginActivity"
             android:layout_marginBottom="13dp"
-            android:hint="@string/et_password_hint"/>
+            android:hint="@string/et_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
         android:id="@+id/cb_Remember"
+        style="@style/cbRemember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/cbRemember"
-        android:minHeight="48dp"
         android:layout_marginBottom="13dp"
+        android:minHeight="48dp"
         android:text="@string/cb_remember_text"
 
 
@@ -93,13 +102,13 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login"
+        style="@style/btnLogin"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        style="@style/btnLogin"
-        android:text="@string/btn_login_text"
-
-        android:textSize="19sp"
         android:gravity="start|center"
+
+        android:text="@string/btn_login_text"
+        android:textSize="19sp"
 
         app:layout_constraintEnd_toStartOf="@+id/glv_right"
         app:layout_constraintStart_toStartOf="@+id/glv_left"
@@ -107,15 +116,14 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_setting"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-
         style="@style/btnSetting"
+        android:layout_width="60dp"
+
+        android:layout_height="60dp"
         android:background="@drawable/ic_settings"
         android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/glh_setting"
         app:layout_constraintEnd_toStartOf="@+id/glv_right"
-        app:layout_constraintStart_toStartOf="@+id/glv_left" />
+        app:layout_constraintTop_toTopOf="@+id/glh_logo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glh_logo"
@@ -129,14 +137,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.07"/>
+        app:layout_constraintGuide_percent="0.07" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glh_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.98" />
+        app:layout_constraintGuide_percent="0.97" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glv_right"
@@ -158,6 +166,34 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.32" />
+
+    <TextView
+        android:id="@+id/tv_forgot_psw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/links"
+        android:text="@string/forgot_psw_text"
+        app:layout_constraintBottom_toTopOf="@+id/glh_setting"
+        app:layout_constraintEnd_toStartOf="@+id/glv_center_login"
+        app:layout_constraintStart_toStartOf="@+id/glv_left" />
+
+    <TextView
+        android:id="@+id/tv_create_acc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/links"
+        android:text="@string/create_account_text"
+        android:gravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/glh_setting"
+        app:layout_constraintEnd_toStartOf="@+id/glv_right"
+        app:layout_constraintStart_toStartOf="@+id/glv_center_login" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_center_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

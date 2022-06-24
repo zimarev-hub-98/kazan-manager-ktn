@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/loginBackground"
@@ -26,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_welcome_text"
-        android:textSize="25sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/glh_login"
         app:layout_constraintStart_toStartOf="@+id/glv_left"
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
 
         android:text="@string/tv_welcome_description_text"
-        android:textSize="17sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/glv_left"
         app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
 
@@ -55,11 +56,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_login"
+            style="@style/etLoginActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            style="@style/etLoginActivity"
             android:layout_marginBottom="13dp"
-            android:hint="@string/et_login_hint"/>
+            android:hint="@string/et_login_hint"
+            android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -74,11 +76,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
+            style="@style/etLoginActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            style="@style/etLoginActivity"
             android:layout_marginBottom="13dp"
-            android:hint="@string/et_password_hint"/>
+            android:hint="@string/et_password_hint"
+            android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
@@ -97,10 +100,11 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         style="@style/btnLogin"
         android:text="@string/btn_login_text"
-
+        android:minHeight="10dp"
+        android:maxHeight="49dp"
         android:textSize="19sp"
         android:gravity="start|center"
 
@@ -135,6 +139,13 @@
         app:layout_constraintGuide_percent="0.07"/>
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glh_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glv_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -148,5 +159,33 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.32" />
 
+    <TextView
+        android:id="@+id/tv_forgot_psw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/links"
+        android:text="@string/forgot_psw_text"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/glh_setting"
+        app:layout_constraintEnd_toStartOf="@+id/glv_center_login"
+        app:layout_constraintStart_toStartOf="@+id/glv_left" />
 
+    <TextView
+        android:id="@+id/tv_create_acc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/links"
+        android:text="@string/create_account_text"
+        android:visibility="gone"
+        android:gravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/glh_setting"
+        app:layout_constraintEnd_toStartOf="@+id/glv_right"
+        app:layout_constraintStart_toStartOf="@+id/glv_center_login" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_center_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,9 @@
     <string name="et_password_hint">ПАРОЛЬ</string>
     <string name="cb_remember_text">Запомнить</string>
     <string name="btn_login_text">Войти</string>
+    <string name="setting_text">Настройки</string>
+    <string name="save_text">Сохранить</string>
+    <string name="ip_address_server_text">IP адрес сервера</string>
+    <string name="forgot_psw_text">Забыли пароль?</string>
+    <string name="create_account_text">Создать аккаунт</string>
 </resources>

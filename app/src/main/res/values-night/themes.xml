@@ -50,4 +50,9 @@
         <item name="android:backgroundTint">@color/btn_login_backgroundTint_dark</item>
         <item name="android:drawableEnd">@drawable/ic_arrow_dark</item>
     </style>
+
+    <style name="links">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">17sp</item>
+    </style>
 </resources>

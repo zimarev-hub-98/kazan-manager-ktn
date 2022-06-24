@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bottomsheet_setting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    style="@style/loginBackground">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_gravity="top"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_minimize"
+        app:layout_constraintEnd_toStartOf="@+id/glv_right_setting"
+        app:layout_constraintStart_toStartOf="@+id/glv_left_setting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_ip_address"
+        style="@style/etlLoginActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/glv_right_setting"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/glv_left_setting"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleSetting">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_ip_address"
+            style="@style/etLoginActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ip_address_server_text"
+            android:inputType="text"
+            android:textColorHint="#546E7A"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="117dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_setting"
+        style="@style/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="start|center"
+        android:text="@string/save_text"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glv_right_setting"
+        app:layout_constraintStart_toStartOf="@+id/glv_left_setting"
+        app:layout_constraintTop_toBottomOf="@+id/etl_ip_address" />
+
+    <TextView
+        android:id="@+id/tvTitleSetting"
+        style="@style/tvWelcomeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="start"
+        android:text="@string/setting_text"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/glv_right_setting"
+        app:layout_constraintStart_toStartOf="@+id/glv_left_setting"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_left_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_right_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

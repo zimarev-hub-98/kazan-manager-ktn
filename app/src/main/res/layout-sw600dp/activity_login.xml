@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/loginBackground"
@@ -43,7 +44,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_login"
         android:layout_width="0dp"
-        android:layout_height="110dp"
+        android:layout_height="wrap_content"
         style="@style/etlLoginActivity"
 
         app:layout_constraintEnd_toStartOf="@+id/glv_right"
@@ -52,18 +53,19 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_login"
+            style="@style/etLoginActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            style="@style/etLoginActivity"
-            android:textSize="27sp"
             android:layout_marginBottom="13dp"
-            android:hint="@string/et_login_hint"/>
+            android:textSize="35sp"
+            android:hint="@string/et_login_hint"
+            android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etl_password"
         android:layout_width="0dp"
-        android:layout_height="110dp"
+        android:layout_height="wrap_content"
         style="@style/etlLoginActivity"
 
         app:layout_constraintEnd_toStartOf="@+id/glv_right"
@@ -72,22 +74,25 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_password"
+            style="@style/etLoginActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            style="@style/etLoginActivity"
-            android:textSize="27sp"
             android:layout_marginBottom="13dp"
-            android:hint="@string/et_password_hint"/>
+            android:textSize="35sp"
+            android:hint="@string/et_password_hint"
+            android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
         android:id="@+id/cb_Remember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         style="@style/cbRemember"
-        android:minHeight="88dp"
-        android:textSize="25sp"
+        android:minHeight="48dp"
         android:layout_marginBottom="13dp"
+
+        android:textSize="35sp"
         android:text="@string/cb_remember_text"
 
 
@@ -97,11 +102,11 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="110dp"
         style="@style/btnLogin"
         android:text="@string/btn_login_text"
 
-        android:textSize="25sp"
+        android:textSize="38sp"
         android:gravity="start|center"
 
         app:layout_constraintEnd_toStartOf="@+id/glv_right"
@@ -162,5 +167,31 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.32" />
 
+    <TextView
+        android:id="@+id/tv_forgot_psw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/links"
+        android:text="@string/forgot_psw_text"
+        app:layout_constraintBottom_toTopOf="@+id/glh_setting"
+        app:layout_constraintEnd_toStartOf="@+id/glv_center_login"
+        app:layout_constraintStart_toStartOf="@+id/glv_left" />
 
+    <TextView
+        android:id="@+id/tv_create_acc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/links"
+        android:text="@string/create_account_text"
+        android:gravity="end"
+        app:layout_constraintBottom_toTopOf="@+id/glh_setting"
+        app:layout_constraintEnd_toStartOf="@+id/glv_right"
+        app:layout_constraintStart_toStartOf="@+id/glv_center_login" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glv_center_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
